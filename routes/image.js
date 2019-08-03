@@ -13,6 +13,9 @@ aws.config.update({
     "region": "ap-south-1"
   });
 
+function sortonConfindence(x,y){
+  return y.Confidence-x.Confidence;
+}
 var s3 = new aws.S3();
 var rekognition = new aws.Rekognition();
 
@@ -51,55 +54,85 @@ router.post('/',upload.single('avatar'),function(req,res,next){
       res.status(500).json({error: err});
     }
     else{
-      // have to process the response to extract the number plate from this section
-      res.send(data);
+      data=data['TextDetections'];
+      if(data.length==0){
+        var objResp={status:false};
+        res.send(objResp);
+      }else{
+        var primaryDetections = data.filter(function(el){
+          return el.ParentId == undefined;
+        });
+
+        var primaryDetections = primaryDetections.filter(function(el){
+          return el.DetectedText!= 'BOUNCE';
+        })
+
+        primaryDetections.sort(sortonConfindence);
+
+        if(primaryDetections.length==1){
+          var numberPlate = primaryDetections[0].DetectedText.replace(/[^a-z0-9]/gi,'');
+          var objResp = {"number":numberPlate,status:true}
+          res.send(objResp);
+        }
+        else if(primaryDetections[0].DetectedText.replace(/[^a-z0-9]/gi,'').length<9){
+          var height1 = primaryDetections[0].Geometry.Polygon[0].Y;
+          var height2 = primaryDetections[1].Geometry.Polygon[0].Y;
+          var recog1=primaryDetections[0].DetectedText.replace(/[^a-z0-9]/gi,'');
+          var recog2=primaryDetections[1].DetectedText.replace(/[^a-z0-9]/gi,'');
+          var numberPlate="";
+          // if(recog1=="BOUNCE"){
+          //   recog1="";
+          // }
+          // if(recog2=="BOUNCE"){
+          //   recog2=="";
+          // }
+          if(height1<height2){
+            numberPlate=recog1+recog2;
+          }
+          else{
+            numberPlate=recog2+recog1;
+          }
+          //var numberPlate= primaryDetections[0].DetectedText.replace(/[^a-z0-9]/gi,'')+primaryDetections[1].DetectedText.replace(/[^a-z0-9]/gi,'');
+          var objResp = {"number":numberPlate,status:true}
+          res.send(objResp);
+        }
+        else{
+          var numberPlate = primaryDetections[0].DetectedText.replace(/[^a-z0-9]/gi,'');
+          var objResp = {"number":numberPlate,status:true}
+          res.send(objResp);
+        }
+      }
     }
   });
 });
 
-// router.get('/:id',function(req,res,next){
-//   // Get a Specific Image alone from the Server
-//   const id = req.params.id;
-//   image.findById(id)
-//     .select('imageName _id')
-//     .exec()
-//     .then(doc =>{
-//       if(doc){
-//         res.send(doc)
-//       }else{
-//         res.status(404).json({message : "No Valid Entry found for the provided ID"});
+// function extractNumberPlate(data){
+//   if(data.length==0){
+//     return "";
+//   }
+//   if(data.length==1){
+//     return data[0].DetectedText;
+//   }
+//   if(data.length==2){
+//     if(data[0].DetectedText[0]=='K'){
+//       if(data[0].DetectedText.replace(/[^a-z0-9]/gi,'').length<9){
+//         return data[0].DetectedText.replace(/[^a-z0-9]/gi,'')+data[1].DetectedText.replace(/[^a-z0-9]/gi,'');
 //       }
-//     })
-//     .catch(err =>{
-//       console.log(err);
-//       res.status(500).json({error: err});
-//     })
-// });
-
-// router.get('/',function(req,res,next){
-//   image.find({},function(err,allImages){
-//     if(err){
-//       return next(err);
+//       else{
+//         return data[0].DetectedText.replace(/[^a-z0-9]/gi,'')
+//       }
 //     }
-//     res.json(allImages);
-//   });
-// });
+//     return data[1].DetectedText.replace(/[^a-z0-9]/gi,'')
+//   }
 //
-//
-// 
-//
-// //Delete an Existing Image
-// router.delete('/:id',function(req,res,next){
-//   image.findOneAndDelete({_id : req.params.id},function(err,result){
-//     if(err) return next(err);
-//     fs.unlink(result.imageName,(err)=>{
-//       if(err) return next(err);
-//       res.send("Deleted the Image Successfully");
-//     })
-//   })
-//   // Delete The Same Image from the Server as well
-// })
-
+//   else{
+//     for(var i=1;i<data.length;i++){
+//       if(data[i].DetectedText[0]=='K'){
+//         return
+//       }
+//     }
+//   }
+// }
 
 
 module.exports = router;
