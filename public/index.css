@@ -1,0 +1,242 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.bounce-css-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.bounce-css-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.bounce-css-image{max-width:100%;max-height:100vh;min-height: 100vh;min-width: 100vw}img{vertical-align:middle}a{color:inherit}
+.bounce-css-table,.bounce-css-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.bounce-css-table-all{border:1px solid #ccc}
+.bounce-css-bordered tr,.bounce-css-table-all tr{border-bottom:1px solid #ddd}.bounce-css-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.bounce-css-table-all tr:nth-child(odd){background-color:#fff}.bounce-css-table-all tr:nth-child(even){background-color:#f1f1f1}
+.bounce-css-hoverable tbody tr:hover,.bounce-css-ul.bounce-css-hoverable li:hover{background-color:#ccc}.bounce-css-centered tr th,.bounce-css-centered tr td{text-align:center}
+.bounce-css-table td,.bounce-css-table th,.bounce-css-table-all td,.bounce-css-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.bounce-css-table th:first-child,.bounce-css-table td:first-child,.bounce-css-table-all th:first-child,.bounce-css-table-all td:first-child{padding-left:16px}
+.bounce-css-btn,.bounce-css-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.bounce-css-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.bounce-css-btn,.bounce-css-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.bounce-css-disabled,.bounce-css-btn:disabled,.bounce-css-button:disabled{cursor:not-allowed;opacity:0.6}.bounce-css-disabled *,:disabled *{pointer-events:none}
+.bounce-css-btn.bounce-css-disabled:hover,.bounce-css-btn:disabled:hover{box-shadow:none}
+.bounce-css-badge,.bounce-css-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.bounce-css-badge{border-radius:50%}
+.bounce-css-ul{list-style-type:none;padding:0;margin:0}.bounce-css-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.bounce-css-ul li:last-child{border-bottom:none}
+.bounce-css-tooltip,.bounce-css-display-container{position:relative}.bounce-css-tooltip .bounce-css-text{display:none}.bounce-css-tooltip:hover .bounce-css-text{display:inline-block}
+.bounce-css-ripple:active{opacity:0.5}.bounce-css-ripple{transition:opacity 0s}
+.bounce-css-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.bounce-css-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.bounce-css-dropdown-click,.bounce-css-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.bounce-css-dropdown-hover:hover .bounce-css-dropdown-content{display:block}
+.bounce-css-dropdown-hover:first-child,.bounce-css-dropdown-click:hover{background-color:#ccc;color:#000}
+.bounce-css-dropdown-hover:hover > .bounce-css-button:first-child,.bounce-css-dropdown-click:hover > .bounce-css-button:first-child{background-color:#ccc;color:#000}
+.bounce-css-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.bounce-css-check,.bounce-css-radio{width:24px;height:24px;position:relative;top:6px}
+.bounce-css-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.bounce-css-bar-block .bounce-css-dropdown-hover,.bounce-css-bar-block .bounce-css-dropdown-click{width:100%}
+.bounce-css-bar-block .bounce-css-dropdown-hover .bounce-css-dropdown-content,.bounce-css-bar-block .bounce-css-dropdown-click .bounce-css-dropdown-content{min-width:100%}
+.bounce-css-bar-block .bounce-css-dropdown-hover .bounce-css-button,.bounce-css-bar-block .bounce-css-dropdown-click .bounce-css-button{width:100%;text-align:left;padding:8px 16px}
+.bounce-css-main,#main{transition:margin-left .4s}
+.bounce-css-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.bounce-css-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.bounce-css-bar{width:100%;overflow:hidden}.bounce-css-center .bounce-css-bar{display:inline-block;width:auto}
+.bounce-css-bar .bounce-css-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.bounce-css-bar .bounce-css-dropdown-hover,.bounce-css-bar .bounce-css-dropdown-click{position:static;float:left}
+.bounce-css-bar .bounce-css-button{white-space:normal}
+.bounce-css-bar-block .bounce-css-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bounce-css-bar-block.bounce-css-center .bounce-css-bar-item{text-align:center}.bounce-css-block{display:block;width:100%}
+.bounce-css-responsive{display:block;overflow-x:auto}
+.bounce-css-container:after,.bounce-css-container:before,.bounce-css-panel:after,.bounce-css-panel:before,.bounce-css-row:after,.bounce-css-row:before,.bounce-css-row-padding:after,.bounce-css-row-padding:before,
+.bounce-css-cell-row:before,.bounce-css-cell-row:after,.bounce-css-clear:after,.bounce-css-clear:before,.bounce-css-bar:before,.bounce-css-bar:after{content:"";display:table;clear:both}
+.bounce-css-col,.bounce-css-half,.bounce-css-third,.bounce-css-twothird,.bounce-css-threequarter,.bounce-css-quarter{float:left;width:100%}
+.bounce-css-col.s1{width:8.33333%}.bounce-css-col.s2{width:16.66666%}.bounce-css-col.s3{width:24.99999%}.bounce-css-col.s4{width:33.33333%}
+.bounce-css-col.s5{width:41.66666%}.bounce-css-col.s6{width:49.99999%}.bounce-css-col.s7{width:58.33333%}.bounce-css-col.s8{width:66.66666%}
+.bounce-css-col.s9{width:74.99999%}.bounce-css-col.s10{width:83.33333%}.bounce-css-col.s11{width:91.66666%}.bounce-css-col.s12{width:99.99999%}
+@media (min-width:601px){.bounce-css-col.m1{width:8.33333%}.bounce-css-col.m2{width:16.66666%}.bounce-css-col.m3,.bounce-css-quarter{width:24.99999%}.bounce-css-col.m4,.bounce-css-third{width:33.33333%}
+.bounce-css-col.m5{width:41.66666%}.bounce-css-col.m6,.bounce-css-half{width:49.99999%}.bounce-css-col.m7{width:58.33333%}.bounce-css-col.m8,.bounce-css-twothird{width:66.66666%}
+.bounce-css-col.m9,.bounce-css-threequarter{width:74.99999%}.bounce-css-col.m10{width:83.33333%}.bounce-css-col.m11{width:91.66666%}.bounce-css-col.m12{width:99.99999%}}
+@media (min-width:993px){.bounce-css-col.l1{width:8.33333%}.bounce-css-col.l2{width:16.66666%}.bounce-css-col.l3{width:24.99999%}.bounce-css-col.l4{width:33.33333%}
+.bounce-css-col.l5{width:41.66666%}.bounce-css-col.l6{width:49.99999%}.bounce-css-col.l7{width:58.33333%}.bounce-css-col.l8{width:66.66666%}
+.bounce-css-col.l9{width:74.99999%}.bounce-css-col.l10{width:83.33333%}.bounce-css-col.l11{width:91.66666%}.bounce-css-col.l12{width:99.99999%}}
+.bounce-css-rest{overflow:hidden}.bounce-css-stretch{margin-left:-16px;margin-right:-16px}
+.bounce-css-content,.bounce-css-auto{margin-left:auto;margin-right:auto}.bounce-css-content{max-width:980px}.bounce-css-auto{max-width:1140px}
+.bounce-css-cell-row{display:table;width:100%}.bounce-css-cell{display:table-cell}
+.bounce-css-cell-top{vertical-align:top}.bounce-css-cell-middle{vertical-align:middle}.bounce-css-cell-bottom{vertical-align:bottom}
+.bounce-css-hide{display:none!important}.bounce-css-show-block,.bounce-css-show{display:block!important}.bounce-css-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.bounce-css-auto{max-width:95%}}
+@media (max-width:600px){.bounce-css-modal-content{margin:0 10px;width:auto!important}.bounce-css-modal{padding-top:30px}
+.bounce-css-dropdown-hover.bounce-css-mobile .bounce-css-dropdown-content,.bounce-css-dropdown-click.bounce-css-mobile .bounce-css-dropdown-content{position:relative}
+.bounce-css-hide-small{display:none!important}.bounce-css-mobile{display:block;width:100%!important}.bounce-css-bar-item.bounce-css-mobile,.bounce-css-dropdown-hover.bounce-css-mobile,.bounce-css-dropdown-click.bounce-css-mobile{text-align:center}
+.bounce-css-dropdown-hover.bounce-css-mobile,.bounce-css-dropdown-hover.bounce-css-mobile .bounce-css-btn,.bounce-css-dropdown-hover.bounce-css-mobile .bounce-css-button,.bounce-css-dropdown-click.bounce-css-mobile,.bounce-css-dropdown-click.bounce-css-mobile .bounce-css-btn,.bounce-css-dropdown-click.bounce-css-mobile .bounce-css-button{width:100%}}
+@media (max-width:768px){.bounce-css-modal-content{width:500px}.bounce-css-modal{padding-top:50px}}
+@media (min-width:993px){.bounce-css-modal-content{width:900px}.bounce-css-hide-large{display:none!important}.bounce-css-sidebar.bounce-css-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.bounce-css-hide-medium{display:none!important}}
+@media (max-width:992px){.bounce-css-sidebar.bounce-css-collapse{display:none}.bounce-css-main{margin-left:0!important;margin-right:0!important}.bounce-css-auto{max-width:100%}}
+.bounce-css-top,.bounce-css-bottom{position:fixed;width:100%;z-index:1}.bounce-css-top{top:0}.bounce-css-bottom{bottom:0}
+.bounce-css-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.bounce-css-display-topleft{position:absolute;left:0;top:0}.bounce-css-display-topright{position:absolute;right:0;top:0}
+.bounce-css-display-bottomleft{position:absolute;left:0;bottom:0}.bounce-css-display-bottomright{position:absolute;right:0;bottom:0}
+.bounce-css-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.bounce-css-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.bounce-css-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.bounce-css-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.bounce-css-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.bounce-css-display-container:hover .bounce-css-display-hover{display:block}.bounce-css-display-container:hover span.bounce-css-display-hover{display:inline-block}.bounce-css-display-hover{display:none}
+.bounce-css-display-position{position:absolute}
+.bounce-css-circle{border-radius:50%}
+.bounce-css-round-small{border-radius:2px}.bounce-css-round,.bounce-css-round-medium{border-radius:4px}.bounce-css-round-large{border-radius:8px}.bounce-css-round-xlarge{border-radius:16px}.bounce-css-round-xxlarge{border-radius:32px}
+.bounce-css-row-padding,.bounce-css-row-padding>.bounce-css-half,.bounce-css-row-padding>.bounce-css-third,.bounce-css-row-padding>.bounce-css-twothird,.bounce-css-row-padding>.bounce-css-threequarter,.bounce-css-row-padding>.bounce-css-quarter,.bounce-css-row-padding>.bounce-css-col{padding:0 8px}
+.bounce-css-container,.bounce-css-panel{padding:0.01em 16px}.bounce-css-panel{margin-top:16px;margin-bottom:16px}
+.bounce-css-code,.bounce-css-codespan{font-family:Consolas,"courier new";font-size:16px}
+.bounce-css-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.bounce-css-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.bounce-css-card,.bounce-css-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.bounce-css-card-4,.bounce-css-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.bounce-css-spin{animation:bounce-css-spin 2s infinite linear}@keyframes bounce-css-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.bounce-css-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.bounce-css-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.bounce-css-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.bounce-css-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.bounce-css-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.bounce-css-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.bounce-css-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.bounce-css-animate-input{transition:width 0.4s ease-in-out}.bounce-css-animate-input:focus{width:100%!important}
+.bounce-css-opacity,.bounce-css-hover-opacity:hover{opacity:0.60}.bounce-css-opacity-off,.bounce-css-hover-opacity-off:hover{opacity:1}
+.bounce-css-opacity-max{opacity:0.25}.bounce-css-opacity-min{opacity:0.75}
+.bounce-css-greyscale-max,.bounce-css-grayscale-max,.bounce-css-hover-greyscale:hover,.bounce-css-hover-grayscale:hover{filter:grayscale(100%)}
+.bounce-css-greyscale,.bounce-css-grayscale{filter:grayscale(75%)}.bounce-css-greyscale-min,.bounce-css-grayscale-min{filter:grayscale(50%)}
+.bounce-css-sepia{filter:sepia(75%)}.bounce-css-sepia-max,.bounce-css-hover-sepia:hover{filter:sepia(100%)}.bounce-css-sepia-min{filter:sepia(50%)}
+.bounce-css-tiny{font-size:10px!important}.bounce-css-small{font-size:12px!important}.bounce-css-medium{font-size:15px!important}.bounce-css-large{font-size:18px!important}
+.bounce-css-xlarge{font-size:24px!important}.bounce-css-xxlarge{font-size:36px!important}.bounce-css-xxxlarge{font-size:48px!important}.bounce-css-jumbo{font-size:64px!important}
+.bounce-css-left-align{text-align:left!important}.bounce-css-right-align{text-align:right!important}.bounce-css-justify{text-align:justify!important}.bounce-css-center{text-align:center!important}
+.bounce-css-border-0{border:0!important}.bounce-css-border{border:1px solid #ccc!important}
+.bounce-css-border-top{border-top:1px solid #ccc!important}.bounce-css-border-bottom{border-bottom:1px solid #ccc!important}
+.bounce-css-border-left{border-left:1px solid #ccc!important}.bounce-css-border-right{border-right:1px solid #ccc!important}
+.bounce-css-topbar{border-top:6px solid #ccc!important}.bounce-css-bottombar{border-bottom:6px solid #ccc!important}
+.bounce-css-leftbar{border-left:6px solid #ccc!important}.bounce-css-rightbar{border-right:6px solid #ccc!important}
+.bounce-css-section,.bounce-css-code{margin-top:16px!important;margin-bottom:16px!important}
+.bounce-css-margin{margin:16px!important}.bounce-css-margin-top{margin-top:16px!important}.bounce-css-margin-bottom{margin-bottom:16px!important}
+.bounce-css-margin-left{margin-left:16px!important}.bounce-css-margin-right{margin-right:16px!important}
+.bounce-css-padding-small{padding:4px 8px!important}.bounce-css-padding{padding:8px 16px!important}.bounce-css-padding-large{padding:12px 24px!important}
+.bounce-css-padding-16{padding-top:16px!important;padding-bottom:16px!important}.bounce-css-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.bounce-css-padding-32{padding-top:32px!important;padding-bottom:32px!important}.bounce-css-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.bounce-css-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.bounce-css-left{float:left!important}.bounce-css-right{float:right!important}
+.bounce-css-button:hover{color:#000!important;background-color:#ccc!important}
+.bounce-css-transparent,.bounce-css-hover-none:hover{background-color:transparent!important}
+.bounce-css-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.bounce-css-amber,.bounce-css-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.bounce-css-aqua,.bounce-css-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.bounce-css-blue,.bounce-css-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.bounce-css-light-blue,.bounce-css-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.bounce-css-brown,.bounce-css-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.bounce-css-cyan,.bounce-css-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.bounce-css-blue-grey,.bounce-css-hover-blue-grey:hover,.bounce-css-blue-gray,.bounce-css-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.bounce-css-green,.bounce-css-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.bounce-css-light-green,.bounce-css-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.bounce-css-indigo,.bounce-css-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.bounce-css-khaki,.bounce-css-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.bounce-css-lime,.bounce-css-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.bounce-css-orange,.bounce-css-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.bounce-css-deep-orange,.bounce-css-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.bounce-css-pink,.bounce-css-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.bounce-css-purple,.bounce-css-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.bounce-css-deep-purple,.bounce-css-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.bounce-css-red,.bounce-css-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.bounce-css-sand,.bounce-css-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.bounce-css-teal,.bounce-css-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.bounce-css-yellow,.bounce-css-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.bounce-css-white,.bounce-css-hover-white:hover{color:#000!important;background-color:#fff!important}
+.bounce-css-black,.bounce-css-hover-black:hover{color:#fff!important;background-color:#000!important}
+.bounce-css-grey,.bounce-css-hover-grey:hover,.bounce-css-gray,.bounce-css-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.bounce-css-light-grey,.bounce-css-hover-light-grey:hover,.bounce-css-light-gray,.bounce-css-hover-light-gray:hover{color:#000!important;background-color:#EEEEEE!important}
+.bounce-css-dark-grey,.bounce-css-hover-dark-grey:hover,.bounce-css-dark-gray,.bounce-css-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.bounce-css-pale-red,.bounce-css-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.bounce-css-pale-green,.bounce-css-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.bounce-css-pale-yellow,.bounce-css-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.bounce-css-pale-blue,.bounce-css-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.bounce-css-text-amber,.bounce-css-hover-text-amber:hover{color:#ffc107!important}
+.bounce-css-text-aqua,.bounce-css-hover-text-aqua:hover{color:#00ffff!important}
+.bounce-css-text-blue,.bounce-css-hover-text-blue:hover{color:#2196F3!important}
+.bounce-css-text-light-blue,.bounce-css-hover-text-light-blue:hover{color:#87CEEB!important}
+.bounce-css-text-brown,.bounce-css-hover-text-brown:hover{color:#795548!important}
+.bounce-css-text-cyan,.bounce-css-hover-text-cyan:hover{color:#00bcd4!important}
+.bounce-css-text-blue-grey,.bounce-css-hover-text-blue-grey:hover,.bounce-css-text-blue-gray,.bounce-css-hover-text-blue-gray:hover{color:#607d8b!important}
+.bounce-css-text-green,.bounce-css-hover-text-green:hover{color:#4CAF50!important}
+.bounce-css-text-light-green,.bounce-css-hover-text-light-green:hover{color:#8bc34a!important}
+.bounce-css-text-indigo,.bounce-css-hover-text-indigo:hover{color:#3f51b5!important}
+.bounce-css-text-khaki,.bounce-css-hover-text-khaki:hover{color:#b4aa50!important}
+.bounce-css-text-lime,.bounce-css-hover-text-lime:hover{color:#cddc39!important}
+.bounce-css-text-orange,.bounce-css-hover-text-orange:hover{color:#ff9800!important}
+.bounce-css-text-deep-orange,.bounce-css-hover-text-deep-orange:hover{color:#ff5722!important}
+.bounce-css-text-pink,.bounce-css-hover-text-pink:hover{color:#e91e63!important}
+.bounce-css-text-purple,.bounce-css-hover-text-purple:hover{color:#9c27b0!important}
+.bounce-css-text-deep-purple,.bounce-css-hover-text-deep-purple:hover{color:#673ab7!important}
+.bounce-css-text-red,.bounce-css-hover-text-red:hover{color:#f44336!important}
+.bounce-css-text-sand,.bounce-css-hover-text-sand:hover{color:#fdf5e6!important}
+.bounce-css-text-teal,.bounce-css-hover-text-teal:hover{color:#009688!important}
+.bounce-css-text-yellow,.bounce-css-hover-text-yellow:hover{color:#d2be0e!important}
+.bounce-css-text-white,.bounce-css-hover-text-white:hover{color:#fff!important}
+.bounce-css-text-black,.bounce-css-hover-text-black:hover{color:#000!important}
+.bounce-css-text-grey,.bounce-css-hover-text-grey:hover,.bounce-css-text-gray,.bounce-css-hover-text-gray:hover{color:#757575!important}
+.bounce-css-text-light-grey,.bounce-css-hover-text-light-grey:hover,.bounce-css-text-light-gray,.bounce-css-hover-text-light-gray:hover{color:#f1f1f1!important}
+.bounce-css-text-dark-grey,.bounce-css-hover-text-dark-grey:hover,.bounce-css-text-dark-gray,.bounce-css-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.bounce-css-border-amber,.bounce-css-hover-border-amber:hover{border-color:#ffc107!important}
+.bounce-css-border-aqua,.bounce-css-hover-border-aqua:hover{border-color:#00ffff!important}
+.bounce-css-border-blue,.bounce-css-hover-border-blue:hover{border-color:#2196F3!important}
+.bounce-css-border-light-blue,.bounce-css-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.bounce-css-border-brown,.bounce-css-hover-border-brown:hover{border-color:#795548!important}
+.bounce-css-border-cyan,.bounce-css-hover-border-cyan:hover{border-color:#00bcd4!important}
+.bounce-css-border-blue-grey,.bounce-css-hover-border-blue-grey:hover,.bounce-css-border-blue-gray,.bounce-css-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.bounce-css-border-green,.bounce-css-hover-border-green:hover{border-color:#4CAF50!important}
+.bounce-css-border-light-green,.bounce-css-hover-border-light-green:hover{border-color:#8bc34a!important}
+.bounce-css-border-indigo,.bounce-css-hover-border-indigo:hover{border-color:#3f51b5!important}
+.bounce-css-border-khaki,.bounce-css-hover-border-khaki:hover{border-color:#f0e68c!important}
+.bounce-css-border-lime,.bounce-css-hover-border-lime:hover{border-color:#cddc39!important}
+.bounce-css-border-orange,.bounce-css-hover-border-orange:hover{border-color:#ff9800!important}
+.bounce-css-border-deep-orange,.bounce-css-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.bounce-css-border-pink,.bounce-css-hover-border-pink:hover{border-color:#e91e63!important}
+.bounce-css-border-purple,.bounce-css-hover-border-purple:hover{border-color:#9c27b0!important}
+.bounce-css-border-deep-purple,.bounce-css-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.bounce-css-border-red,.bounce-css-hover-border-red:hover{border-color:#f44336!important}
+.bounce-css-border-sand,.bounce-css-hover-border-sand:hover{border-color:#fdf5e6!important}
+.bounce-css-border-teal,.bounce-css-hover-border-teal:hover{border-color:#009688!important}
+.bounce-css-border-yellow,.bounce-css-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.bounce-css-border-white,.bounce-css-hover-border-white:hover{border-color:#fff!important}
+.bounce-css-border-black,.bounce-css-hover-border-black:hover{border-color:#000!important}
+.bounce-css-border-grey,.bounce-css-hover-border-grey:hover,.bounce-css-border-gray,.bounce-css-hover-border-gray:hover{border-color:#9e9e9e!important}
+.bounce-css-border-light-grey,.bounce-css-hover-border-light-grey:hover,.bounce-css-border-light-gray,.bounce-css-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.bounce-css-border-dark-grey,.bounce-css-hover-border-dark-grey:hover,.bounce-css-border-dark-gray,.bounce-css-hover-border-dark-gray:hover{border-color:#616161!important}
+.bounce-css-border-pale-red,.bounce-css-hover-border-pale-red:hover{border-color:#ffe7e7!important}.bounce-css-border-pale-green,.bounce-css-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.bounce-css-border-pale-yellow,.bounce-css-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.bounce-css-border-pale-blue,.bounce-css-hover-border-pale-blue:hover{border-color:#e7ffff!important}
+
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

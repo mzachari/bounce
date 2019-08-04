@@ -6,12 +6,13 @@ var session = require('express-session');
 var cors = require('cors');
 
 mongoose.connect("mongodb://jeevan:welcome1@ds349065.mlab.com:49065/bounce",{useNewUrlParser: true});
+app.use(cors());
 
-app.use('/uploads', express.static('uploads'));
+app.use('/public', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(cors());
+
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));

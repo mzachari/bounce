@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<title>Bounce Hackathon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="http://18.221.95.123:3050/public/index.js"></script>
+<link rel="stylesheet" href="http://18.221.95.123:3050/public/index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="bounce-css-light-grey">
+
+<div id = "topDiv" class="bounce-css-content" style="max-width:1600px">
+
+  <!-- Header -->
+
+
+  <!-- Image header -->
+
+  <header class="bounce-css-display-container bounce-css-wide" id="home">
+    <img class="bounce-css-image" src="http://18.221.95.123:3050/public/bounce_bg4.png" alt="Bounce Scooty" width="100%" />
+
+    <div class="bounce-css-display-right bounce-css-padding-large">
+      <form enctype="multipart/form-data" method="post" style="display:none">
+      <input id='fileUpload' type='file' onchange="readURL(this)" accept="image/*" hidden/>
+    </form>
+
+      <h6 id="uploadImgOpt" style="display:inline-block" ><button  id="uploadBtn" style="display:inline-block" class="bounce-css-button bounce-css-white .bounce-css-padding-32 bounce-css-xxlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="openFileUploadWindow()">
+        <span id="uploadSpan">UPLOAD IMAGE</span>
+        <i style="display: none" id ="loaderIcon" class="fa fa-spinner fa-spin"></i>
+        <img id="uploadedSucc" src="http://18.221.95.123:3050/public/checkmark-24.ico" width="25px" height="25px" style="display:none" />
+      </button></h6>
+      <h6 id="enterMan"><button id="enterManBtn" class="bounce-css-button bounce-css-white .bounce-css-padding-32 bounce-css-xxlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="enterManually()">
+        ENTER MANUALLY  <img id="enterManSucc" src="http://18.221.95.123:3050/public/checkmark-24.ico" width="25px" height="25px" style="display:none" />
+      </button></h6>
+  </div>
+  </header>
+
+
+</div>
+<div id = "imageInfo" style="display:none;margin-top: 30px;">
+<div class="bounce-css-row bounce-css-padding" style="background-color:#F5F5F5">
+  <div class="bounce-css-center"  id="licenseNum">
+
+    <div id="licenseNumImg" contenteditable="true" style = "display: inline-block;font-size:40px;font-weight:bold;background-color:#EEEEEE;padding:5px 25px" >
+
+  </div>
+
+  <div class="bounce-css-justify bounce-css-center">
+    <img id = "uploadedImage" src="#" alt="Scooty Image" width=500px height=500px class="bounce-css-padding-16">
+
+  </div>
+</div>
+</div>
+<center>
+<div style="display:flex;flex-direction:row;justify-content: center;" class="bounce-css-justify bounce-css-center">
+  <h6 style="margin-right:20px"  id="startOver"><button class="bounce-css-button bounce-css-red .bounce-css-padding-48 bounce-css-xlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="startOver()">STARTOVER</button></h6>
+  <h6 id="bookBounce"><button class="bounce-css-button bounce-css-red .bounce-css-padding-48 bounce-css-xlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="confirmAndBookImg()">CONFIRM & BOOK</button></h6>
+</div>
+</center>
+</div>
+<div id = "enterManInfo" style="display:none;margin-top: 30px;">
+<div class="bounce-css-row bounce-css-padding" style="background-color:#F5F5F5">
+  <div class="bounce-css-center"  id="licenseNumManDiv">
+    <input type="text" id="licenseNumMan" name="licenseNumMan" placeholder="Enter Vehicle Registration Number...">
+</div>
+</div>
+<center>
+<div style="display:flex;flex-direction:row;justify-content: center;" class="bounce-css-justify bounce-css-center">
+  <h6 style="margin-right:20px"  id="startOver"><button class="bounce-css-button bounce-css-red .bounce-css-padding-48 bounce-css-xlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="startOver()">STARTOVER</button></h6>
+  <h6 id="bookBounce"><button class="bounce-css-button bounce-css-red .bounce-css-padding-48 bounce-css-xlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="confirmAndBookMan()">CONFIRM & BOOK</button></h6>
+</div>
+</center>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <div style='display:inline-block' id = "modalHeader">
+         <h4 style='display:inline-block' class="modal-title">Ride Details</h4>
+       </div>
+       </div>
+       <div class="modal-body">
+         <span id="modalBody"></span>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+
+   </div>
+ </div>
+
+
+</body>
+</html>
