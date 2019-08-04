@@ -9,8 +9,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<script src="http://18.221.95.123:3050/public/index.js"></script>
-<link rel="stylesheet" href="http://18.221.95.123:3050/public/index.css">
+<script src="./index.js"></script>
+<link rel="stylesheet" href="./index.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +20,7 @@ body {font-family: "Open Sans"}
 </style>
 <body class="bounce-css-light-grey">
 
-<div id = "topDiv" class="bounce-css-content" style="max-width:1600px">
+<div id = "topDiv" class="bounce-css-content" style="min-width:100vw">
 
   <!-- Header -->
 
@@ -28,20 +28,20 @@ body {font-family: "Open Sans"}
   <!-- Image header -->
 
   <header class="bounce-css-display-container bounce-css-wide" id="home">
-    <img class="bounce-css-image" src="http://18.221.95.123:3050/public/bounce_bg4.png" alt="Bounce Scooty" width="100%" />
+    <img class="bounce-css-image" src="./bounce_bg4.png" alt="Bounce Scooty" width="100%" />
 
     <div class="bounce-css-display-right bounce-css-padding-large">
       <form enctype="multipart/form-data" method="post" style="display:none">
       <input id='fileUpload' type='file' onchange="readURL(this)" accept="image/*" hidden/>
     </form>
 
-      <h6 id="uploadImgOpt" style="display:inline-block" ><button  id="uploadBtn" style="display:inline-block" class="bounce-css-button bounce-css-white .bounce-css-padding-32 bounce-css-xxlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="openFileUploadWindow()">
+      <h6 id="uploadImgOpt" style="display:inline-block" ><button  style = "min-width: 300px;max-width:100vw" id="uploadBtn" style="display:inline-block" class="bounce-css-button bounce-css-white .bounce-css-padding-32 bounce-css-xxlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="openFileUploadWindow()">
         <span id="uploadSpan">UPLOAD IMAGE</span>
         <i style="display: none" id ="loaderIcon" class="fa fa-spinner fa-spin"></i>
-        <img id="uploadedSucc" src="http://18.221.95.123:3050/public/checkmark-24.ico" width="25px" height="25px" style="display:none" />
+        <img id="uploadedSucc" src="./checkmark-24.ico" width="25px" height="25px" style="display:none" />
       </button></h6>
-      <h6 id="enterMan"><button id="enterManBtn" class="bounce-css-button bounce-css-white .bounce-css-padding-32 bounce-css-xxlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="enterManually()">
-        ENTER MANUALLY  <img id="enterManSucc" src="http://18.221.95.123:3050/public/checkmark-24.ico" width="25px" height="25px" style="display:none" />
+      <h6 id="enterMan"><button style = "min-width: 300px;max-width:100vw" id="enterManBtn" class="bounce-css-button bounce-css-white .bounce-css-padding-32 bounce-css-xxlarge bounce-css-opacity bounce-css-hover-opacity-off" onclick="enterManually()">
+        ENTER MANUALLY  <img id="enterManSucc" src="./checkmark-24.ico" width="25px" height="25px" style="display:none" />
       </button></h6>
   </div>
   </header>
@@ -57,7 +57,7 @@ body {font-family: "Open Sans"}
   </div>
 
   <div class="bounce-css-justify bounce-css-center">
-    <img id = "uploadedImage" src="#" alt="Scooty Image" width=500px height=500px class="bounce-css-padding-16">
+    <img id = "uploadedImage" src="#" alt="Scooty Image" width=500px height=500px style= "max-width:100vw" class="bounce-css-padding-16">
 
   </div>
 </div>
